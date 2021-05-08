@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- To be linked if needed -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <style>
+        .style1 {
+            font-size: 16px;
+            color: rgb(36, 158, 25);
+        }
+
+        .style2 {
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        .style3 {
+            background-color: royalblue;
+            font-size: 50px;
+        }
+
+        #para1 {
+            color: rgb(0, 0, 255);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            font-style: italic;
+            color: rgb(255, 102, 0);
+        }
+
+        .linkstyle {
+            font-size: 22px;
+            background-clip: lightblue;
+        }
+
+        .boxstyle1 {
+            background-color: hsl(85, 58%, 30%);
+        }
+
+        h1.title {
+            font-size: 40px;
+            color: rgba(0, 255, 242, 0.2);
+        }
+
+        h1.main{
+            font-family: "lemon Friday", fantasy;
+            font-size: 48px;
+        }
+
+
+        h1.title~p {
+            color: blue;
+        }
+
+        h1.title+p {
+            color: rgb(226, 43, 202);
+        }
+
+        /* All p tags within section element */
+        section p {
+            font-size: 14px;
+            color: rgb(66, 64, 64);
+        }
+
+        section>p {
+            color: violet;
+        }
+
+        /* All h1 and h2 (comma means two separate elements to target) */
+        h1,
+        h2 {
+            font-style: italic;
+        }
+
+        .list1 {
+            margin-left: 60px;
+            padding: 0;
+            list-style-type: square;
+        }
+
+        .list1>li {
+            font-size: 22px;
+            line-height: 40px;
+        }
+
+        .list1 ul>li {
+            font-size: 14px;
+        }
+
+        .list2 {
+            list-style-type: lower-roman;
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-family: 'Orelega One', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="main">Welcome to my webpage</h1>
+    <p id="para1">This is paragraph 1.</p>
+    <p class="style1 style2 style3">CSS Practice</p>
+    <p style="color: #441F22; text-decoration: underline;">More text ....</p>
+    <section class="style1">
+        This is a new section
+        <a href="https://www.sp.edu.sg">Go to Singapore Poly</a>
+        <br>
+        <a href="https://youtube.com" class="linkstyle">YouTube</a>
+        <p>This is a text within a section</p>
+
+        <blockquote>
+            <p>A paragraph inside a block quote</p>
+        </blockquote>
+    </section>
+    <section class="boxstyle1">
+        <h1 class="title">Hello from this new section!</h1>
+        <h2>This is another hello paragraph!</h2>
+        <p>This paragraph is direction child of section and also a sibling of h1</p>
+        <ul class="list1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>
+                Item 3
+
+                <ul>
+                    <li>Sub item 1</li>
+                    <li>Sub item 2</li>
+                    <li>Sub item 3</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>Another paragraph inside section and also sibling of h1</p>
+
+        <ol class="list2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Ite 3</li>
+        </ol>
+    </section>
+
+    <h1 class="title">Hello</h1>
+    <h2>This is another hello paragraph!</h2>
+    <p>Test</p>
+
+</body>
+
+</html>

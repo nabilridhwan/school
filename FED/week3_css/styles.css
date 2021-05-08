@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Lemon Friday";
+    /* Specify more src for backup just in case Lemon Friday font is not available, use format() attribute too */
+    src: url(fonts/lemon_friday/Lemon\ Friday.ttf) format("truetype");
+}
+
+#para1{
+    color: rgb(0, 0, 255);
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(255, 102, 0);
+}
