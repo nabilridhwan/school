@@ -1,0 +1,220 @@
+<!--Week 4, Lesson 5. 10 May 2021.-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        #box1 {
+            width: 500px;
+            height: 400px;
+            background-color: hotpink;
+            padding: 10px;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        blockquote {
+            width: 80%;
+            height: 120px;
+            text-align: center;
+            background-color: green;
+        }
+
+        #box2 {
+            width: 70%;
+            background-color: mediumpurple;
+            float: left;
+        }
+
+        .floatbox1 {
+            text-align: center;
+
+            width: 300px;
+            height: 100px;
+            background-color: mediumvioletred;
+            float: left;
+            border: 1px solid #000;
+        }
+
+        .floatbox2 {
+            text-align: center;
+
+            width: 200px;
+            height: 100px;
+            background-color: mediumturquoise;
+            border: 1px solid #000;
+            float: right;
+        }
+
+        .floatbox3 {
+            width: 200px;
+            height: 100px;
+            background-color: salmon;
+            border: 1px solid #000;
+            float: right;
+
+            /* Clear "left" means i want to occupy the row in which there are no left elements. Go to another row where there is no left elements. Clear "right" means i want to occupy the row in which there are no right elements.*/
+            clear: left;
+        }
+
+        #box3 {
+            width: 300px;
+            height: 200px;
+            background-color: slateblue;
+            position: absolute;
+            top: 50px;
+            left: 120px;
+        }
+
+        #box4 {
+            width: 250px;
+            height: 250px;
+            background-color: yellow;
+            position: absolute;
+        }
+
+        #box5 {
+            width: 100px;
+            height: 80px;
+            background-color: cadetblue;
+            position: absolute;
+            top: 40px;
+            right: 70px;
+        }
+
+        #box6 {
+            width: 120px;
+            height: 100px;
+            background-color: darkblue;
+            position: absolute;
+            bottom: 15px;
+            left: 30px;
+        }
+
+        /* Impostor */
+        #impostorBody {
+            z-index: 2;
+            position: relative;
+            display: block;
+            left: 100px;
+            border-radius: 999px 999px 100px 100px;
+            border: 10px black solid;
+            width: 300px;
+            height: 400px;
+            background-image: linear-gradient(red, rgb(167, 0, 0));
+        }
+
+        #impostorGogglesMain {
+            position: relative;
+            left: 60px;
+            top: 50px;
+            background-color: #98C5D0;
+            background-image: linear-gradient(#FFF, #98C5D0, #4A646D);
+            border: 10px black solid;
+            width: 180px;
+            height: 80px;
+            border-radius: 999px;
+        }
+
+        #impostorGogglesWhiteTop {
+            z-index: 3;
+            position: relative;
+            left: 40px;
+            top: 40px;
+            width: 150px;
+            height: 50px;
+            background-color: white;
+        }
+
+        #impostorBackpack {
+            position: absolute;
+            z-index: 1;
+            left: 50px;
+            top: 100px;
+            border-radius: 40px;
+            width: 100px;
+            height: 200px;
+            border: 10px black solid;
+            background-image: linear-gradient(red, rgb(167, 0, 0));
+        }
+        #impostorLegs-Left {
+            position: absolute;
+            z-index: 1;
+            left: 150px;
+            top: 300px;
+            border-radius: 40px;
+            width: 80px;
+            height: 200px;
+            border: 10px black solid;
+            background-image: linear-gradient(red, rgb(167, 0, 0));
+        }
+
+        #impostorLegs-Right {
+            position: absolute;
+            z-index: 1;
+            left: 300px;
+            top: 300px;
+            border-radius: 40px;
+            width: 80px;
+            height: 200px;
+            border: 10px black solid;
+            background-image: linear-gradient(red, rgb(167, 0, 0));
+        }
+
+        #box7{
+            width: 100px;
+            height: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="impostorBody">
+        <!-- <div id="impostorGogglesWhiteTop"></div> -->
+        <div id="impostorGogglesMain"></div>
+        <div id="impostorGogglesGrayReflection"></div>
+    </div>
+    <div id="impostorBackpack"></div>
+    <div id="impostorLegs-Left"></div>
+    <div id="impostorLegs-Right"></div>
+    <div id="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, deserunt illum odio consequuntur
+            incidunt itaque quae ducimus, accusamus blanditiis voluptate, temporibus minima vero perferendis commodi
+            explicabo error assumenda animi. Cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            cupiditate tempora minima? Fuga dignissimos culpa, incidunt tempora dolore placeat ut ipsam maiores commodi
+            inventore totam minus, neque sequi illo reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt iure tempora sapiente cupiditate officia consectetur commodi quaerat facilis, architecto eius modi
+            totam, harum velit eaque excepturi, at enim soluta. Tempora? Lorem ipsum, dolor sit amet consectetur
+            adipisicing
+            elit. Voluptatum voluptates tempora quis debitis cumque aperiam earum. Perferendis ut harum ducimus
+            excepturi
+            fugit voluptatem corrupti, veritatis cupiditate, vel voluptate natus dolore!</p>
+    </div>
+
+    <blockquote>
+        A simple line of text.
+    </blockquote>
+
+    <div id="box2">
+        <div class="floatbox1">1</div>
+        <div class="floatbox1">2</div>
+        <div class="floatbox2">6</div>
+        <div class="floatbox1">3</div>
+        <div class="floatbox2">4</div>
+        <div class="floatbox2">5</div>
+        <div class="floatbox3">7</div>
+    </div>
+
+    <!-- <div id="box3"></div> -->
+    <div id="box4">
+        <div id="box5"></div>
+        <div id="box6"></div>
+    </div>
+
+    <div id="box7"></div>
+
+</body>
+
+</html>
