@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        /* Positioning of caption - by default is placed at the top */
+        table~caption {
+            caption-side:bottom;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Timetable for DCITP/22</caption>
+
+        <tr>
+            <th>Timing/Day</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+
+        <tr>
+            <!-- Column span -->
+            <th>0800 - 1000</th>
+            <td colspan="2">FED</td>
+            <td>FOP</td>
+            <td colspan="4"></td>
+        </tr>
+
+        <tr>
+            <!-- Row span -->
+            <th>1000 - 1200</th>
+            <td rowspan="2">MATH</td>
+            <td>ECG</td>
+        </tr>
+
+        <tr>
+            <th>1400 - 1600</th>
+            
+        </tr>
+
+        <tr>
+            <th>1600 - 1800</th>
+        </tr>
+
+        <tr>
+            <colgroup>
+                <col span="6" />
+                <td>A colgroup!</td>
+            </colgroup>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
