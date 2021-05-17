@@ -1,0 +1,119 @@
+</DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .tablestyle {
+            border: 1px solid black;
+            padding: 10;
+            border-collapse: collapse;
+            caption-side: bottom;
+        }
+
+        .tablestyle td,
+        .tablestyle th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        table>caption {
+            text-align: right;
+        }
+
+        .tablestyle thead {
+            font-size: 16px;
+            background-color: rgb(59, 59, 59);
+            color: white;
+        }
+
+        .tablestyle tbody{
+            /* background-color: thistle; */
+        }
+
+        .tablestyle tfoot{
+            background-color: yellow;
+            color: rgb(54, 62, 70);
+        }
+
+        .tablecol2{
+            background-color: steelblue;
+        }
+
+        .tablecol3{
+            background-color: springgreen !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table class="tablestyle">
+        <caption>My schedule</caption>
+        <colgroup>
+            <!-- First group -->
+            <col span="2" class="tablecol1" />
+
+            <!-- Second group -->
+            <col span="2" class="tablecol2" />
+
+            <col class="tablecol3" /> 
+        </colgroup>
+        <!-- thead, tbody and tfoot allows for styling of different sections like the head, body and footer -->
+        <thead>
+            <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3</th>
+                <th>Col 4</th>
+                <th>Col 5</th>
+            </tr>
+
+            <tr>
+                <th colspan="5">
+                    Grouping 1
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td colspan="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sapiente quos consectetur
+                    quas neque pariatur natus labore quaerat expedita ducimus facilis, ratione magnam tenetur quod.
+                    Animi,
+                    laborum. Dolore, odit molestiae?</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4 & 7</td>
+                <td>5</td>
+                <td>6</td>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+                <td>Footer 4</td>
+                <td>Footer 5</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
