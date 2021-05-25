@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        input::placeholder{
+            color: gray;
+        }
+
+        input{
+            /* background-color: rgb(231, 227, 227); */
+            transition:0.3s ease-out;
+            border: 1px solid black;
+            width: 10em;
+            height: 2em;
+            padding: 10px;
+        }
+
+        input:focus, select:focus{
+            background-color: yellow;
+            transform: scale(1.05)
+        }
+
+        input:valid{
+            background-color: lightgreen;
+        }
+
+        input:invalid{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Method is POST to the endpoint # with encoding of multipart/form-data specially used for files -->
+    <form id="feedbackForm" name="feedbackForm" method="POST" action="#" enctype="multipart/form-data">
+
+        <!-- Fieldset allows to group element to different sections -->
+        <fieldset id="formSection1">
+            <legend>User information</legend>
+
+            <label for="username">Name:</label>
+            <input type="text" name="username" id="username">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="name@domain.com" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="+6588888888" pattern="(\+65)\d{8}">
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+
+            <label for="yourwebsite">URL:</label>
+            <input type="URL" name="yourwebsite" id="yourwebsite">
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday">
+
+            <label for="color">Favourite color:</label>
+            <input type="color" name="color" id="color">
+
+            <label for="rating">Select rating:</label>
+            <input type="range" min="1" max="10" name="rating" id="rating">
+
+        </fieldset>
+
+        <fieldset id="formSection2">
+            <legend>Your interests</legend>
+            <label for="faveSports">Select your favourite sport:</label>
+            <select name="faveSports" id="faveSports" multiple size="2>
+                <option value=" soccer">Soccer</option>
+                <option value="balls">Playing with balls</option>
+                <option value="yoyo">Playing with bearing attatched to string</option>
+                <option value="walking">Walking counts too right?</option>
+                <option value="sleeping">Sleeping is a sport! Embrace it!</option>
+            </select>
+
+            <label for="faveFood">Select your favourite food:</label>
+            <select name="faveSports" id="faveFood">
+                <optgroup label="Main course">
+                    <option value="nasilemak">Nasi Lemak</option>
+                    <option value="mala">Mala hotpot</option>
+                </optgroup>
+
+                <optgroup label="Deserts">
+                    <option value="cheesecake">Cheese Cake</option>
+                    <option value="cheesefries">Cheese Fries</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <label for="s1">1</label>
+            <input name="service" id="s1" value="1" type="radio">
+
+            <label for="s2">2</label>
+            <input name="service" id="s2" value="2" type="radio">
+
+            <label for="s3">3</label>
+            <input name="service" id="s3" value="3" type="radio">
+
+            <br>
+
+            Choose your drink <br>
+            <label for="water">water</label>
+            <input type="checkbox" value="water" name="water" id="water"> <br>
+
+            <label for="coke">coke</label>
+            <input type="checkbox" value="coke" name="coke" id="coke"> <br>
+
+            <label for="fanta">fanta</label>
+            <input type="checkbox" value="fanta" name="fanta" id="fanta"> <br>
+
+            <input list="browsers" name="browser" id="browser">
+
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </fieldset>
+
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset Form">
+
+    </form>
+</body>
+
+</html>
