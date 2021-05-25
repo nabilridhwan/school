@@ -86,10 +86,10 @@
 
          <label for="phoneBox">Phone Number*</label>
          <input type="tel" name="phoneNumber" id="phoneBox" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
-            required>
+            required placeholder="(nnn) nnn nnnn">
 
          <label for="idBox">ACGIP Membership Number*</label>
-         <input type="text" name="acgipID" id="idBox" pattern="^acgip\-\d{6}$">
+         <input type="text" name="acgipID" id="idBox" pattern="^acgip\-\d{6}$" placeholder="acgip-nnnnnn">
 
          <label for="registerType">Registration Category</label>
          <input list="regList" type="text" name="registerType" id="registerType">
