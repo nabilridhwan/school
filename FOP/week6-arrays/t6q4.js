@@ -10,7 +10,7 @@ for (var i = 0; i < intArr.length; i++) {
     intArr[i] = Math.floor(Math.random() * 10) + 1;
 }
 
-biggest = 0;
+biggest = intArr[0];
 for(var i = 0; i < intArr.length; i++){
     if(intArr[i] > biggest){
         biggest = intArr[i]
