@@ -1,3 +1,8 @@
+/*
+    Name: Nabil Ridhwanshah
+    ID: P2007421
+*/
+
 function function1() {
     str1 = "hello";
     console.log(str1 + " & " + str2);
