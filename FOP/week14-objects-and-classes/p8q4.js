@@ -25,6 +25,7 @@ class Fan{
                 wordSpeed = "unknown"
                 break;
         }
+
         if(this.on){
             return "on at " + wordSpeed + " speed"
         }

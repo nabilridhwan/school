@@ -14,8 +14,8 @@ class BankAccount{
     }
 }
 
-var oliver = new BankAccount("Oliver Twist", 1000.00)
-var richie = new BankAccount("Riche Rich", 100000.00)
+var oliver = new BankAccount("Oliver Twist", 1000)
+var richie = new BankAccount("Riche Rich", 100000)
 
 console.log(oliver.getBalance())
 console.log(richie.getBalance())

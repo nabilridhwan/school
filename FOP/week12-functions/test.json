@@ -1,0 +1,58 @@
+[{
+    "name": "noodles",
+    "items": [{
+            "price": 3,
+            "name": "Mee Siam",
+            "options": ["No Option", "Separate Gravy and Noodles", "Mix the gravy and Noodles"]
+        },
+        {
+            "price": 2,
+            "name": "Mee Maggi Goreng",
+            "options": ["No Option", "Separate Gravy and Noodles", "Mix the gravy and Noodles"]
+        },
+        {
+            "price": 3,
+            "name": "Mee Rebus",
+            "options": ["No Option", "Separate Gravy and Noodles", "Mix the gravy and Noodles"]
+        }
+    ]
+},
+{
+    "name": "rice",
+    "items": [{
+            "price": 3,
+            "name": "Chicken Rice",
+            "options": ["No Option", "With Chilli", "Without Chilli "]
+        },
+        {
+            "price": 3,
+            "name": "Pineapple Fried Rice",
+            "options": ["No Option", "Without Chilli Padi", "With Chilli Padi"]
+        },
+        {
+            "price": 8,
+            "name": "Nasi Briyani (Meat)",
+            "options": ["No Option", "Mix Gravy", "Do not mix gravy"]
+        }
+    ]
+},
+{
+    "name": "drinks",
+    "items": [{
+            "price": 2,
+            "name": "Milo Dinosaur",
+            "option": ["No Option", "Less Sweetness", "More Sweetness"]
+        },
+        {
+            "price": 2,
+            "name": "Lychee Ice Blended",
+            "option": ["No Option", "Less Sweetness", "More Sweetness"]
+        },
+        {
+            price: 3,
+            "name": "Brown Sugar Milk Tea",
+            "option": ["No Option", "Less Sweetness", "More Sweetness"]
+        }
+    ]
+}
+]
