@@ -3,6 +3,15 @@
     ID: P2007421
 */
 
+class Square{
+    constructor(length){
+        this.length = length;
+    }
+
+    calculateArea(){
+        return this.length ** 2;
+    }
+}
 
 
 let sqArray = new Array(10);
