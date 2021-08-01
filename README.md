@@ -1,9 +1,13 @@
 # School
+> All codes relating to my stay in Singapore Polytechnic
 
-# Rights of using these files
-The purpose of these files is for the reader to refer to and compare with their work. Sometimes these files can be used as a second perspective. I am not responsible for what the reader does to the files, which includes but is not limited to cheating. Cheating is wrong!
+# Assignments (CA1/CA2) Answers
+Looking for CA1/CA2 answers? You've come to the wrong place, if you're looking for a head-start or a hint, you can go up to one of our friendly lecturers or even your friends who are very knowledgeable.
 
-# Naming of files.
+# Who can use these files and How can it be used?
+The purpose of these files is for the reader to refer to and compare with their work. Sometimes these files can be used as a second perspective. I am not responsible for what the reader does to the files (which includes but is not limited to cheating). Cheating is wrong and I do not condone it!
+
+# Naming of files
 Tutorials and practicals in this repository follow a particular naming convention which may look like these:
 ```
 t1q1.js

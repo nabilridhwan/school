@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <!-- Reference to external script -->
+    <!-- Defer means to wait until the page have loaded or finished first then run the script -->
+    <script src="./scripts.js" defer></script>
+    <script type="text/javascript">
+        // // Waits for the window to load, then executes the callback
+        // window.onload = () => {
+
+        //     // Change the query selector innerHTML to another text
+        //     document.querySelector("h1").innerHTML = "FED Javascript lesson";
+        // }
+    </script>
+
+    <style>
+        h1 {
+            transition: 1s ease-in-out;
+            font-size: 4em;
+        }
+
+        .normal {
+            font-size: 16px;
+            color: darkblue;
+        }
+
+        .newStyle {
+            color: darkgreen;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my page</h1>
+
+    <!-- Button Control -->
+    <button id="changeTitleButton">Change Title</button>
+    <button id="changeParagraphStyleButton" onclick="changeStyle()">Change Paragraph Style</button>
+
+    <p class="normal">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque suscipit optio cum eius accusantium reiciendis
+        eos nemo accusamus! Exercitationem corrupti tenetur ducimus ut voluptas earum, quo aut maxime voluptate debitis!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos qui fugit natus harum autem, voluptatem unde quasi mollitia totam nulla recusandae, perspiciatis sit! Quas animi delectus necessitatibus sed reprehenderit?
+    </p>
+
+    <p>Another p tag!</p>
+
+    <form action="#">
+        <p class="error"></p>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

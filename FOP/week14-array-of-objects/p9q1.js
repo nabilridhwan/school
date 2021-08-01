@@ -33,5 +33,5 @@ for(let i = 0; i < 10; i++){
 console.log("Length\tArea");
 // iterate through sqArray
 for(let i = 0; i < sqArray.length; i++){
-    console.log(sqArray[i].length + "\t" + sqArray[i].calculateArea());
+    console.log(sqArray[i].length + "\t" + sqArray[i].calculateArea().toFixed(1));
 }
