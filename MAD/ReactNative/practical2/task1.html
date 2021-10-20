@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Diploma Course</h1>
+    <select name="diplomaSelect" id="diplomaSelect">
+        <option value="SpDip in WebDevelopment ">SpDip in WebDevelopment </option>
+        <option value="SpDip in AI">SpDip in AI</option>
+        <option value="SpDip in Media ">SpDip in Media </option>
+
+    </select>
+
+    <p id="output"></p>
+
+    <script>
+
+        class Diploma{
+            constructor(diplomaName){
+                this.diploma = diplomaName;
+            }
+        }
+        
+        class Module extends Diploma{
+            constructor(diplomaName){
+                super(diplomaName)
+            }
+
+            getModuleName = () => {
+                if(this.diploma == "SpDip in WebDevelopment "){
+                    return "MAD";
+                }else if(this.diploma == "SpDip in AI"){
+                    return "Python"
+                }else if(this.diploma == "SpDip in Media"){
+                    return "Unity"
+                }else{
+                    return "Not sure"
+                }
+            }
+        }
+        
+        document.getElementById("diplomaSelect").addEventListener("change", (e) => {
+            console.log(e.target.value);
+
+            let module = new Module(e.target.value)
+
+            document.getElementById("output").innerHTML = `I am taking ${module.getModuleName()} module, it will award ${e.target.value}`
+        })
+    </script>
+</body>
+</html>

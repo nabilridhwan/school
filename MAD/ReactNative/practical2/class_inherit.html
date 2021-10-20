@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        class Course {
+            constructor(dipname) {
+                this.dip = dipname;
+            }
+
+            taking() {
+                return 'I am taking ' + this.dip + ' diploma';
+            }
+        }
+
+        // It extends the class above!
+        class SpDiploma extends Course {
+            constructor(dipname, modname) {
+                super(dipname);
+                this.module = modname;
+            }
+
+            show() {
+
+                // this.taking() is a method from Course which is inherited
+                return this.taking() + ', the module is ' + this.module
+            }
+        }
+
+        mycourse = new SpDiploma('DIT', 'MAD');
+        mycourse.show();
+
+
+        document.write(mycourse.show());
+    </script>
+
+</body>
+
+</html>

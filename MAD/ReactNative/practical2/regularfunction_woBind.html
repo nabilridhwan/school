@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Regular Function</h1>
+
+    <p>The <strong>this</strong> keyword represents different objects depending on how the function was called.</p>
+
+    <button id="btn">Click Me!</button>
+
+    <p><strong>this</strong> represents:</p>
+
+    <p id="demo"></p>
+
+    <p>See the difference before and after the button is clicked.</p>
+
+    <script>
+        class MyColor {
+            constructor(color) {
+                this.color = color;
+            }
+
+            changeColor = function () {
+                console.log(this.color);
+                document.getElementById("demo").innerHTML += this.color;
+            }
+        }
+
+        mycolor = new MyColor("Red");
+        mycolor.changeColor;
+
+        //The window object calls the function:
+        window.addEventListener("load", mycolor.changeColor);
+
+        //A button object calls the function:
+        document.getElementById("btn").addEventListener("click", mycolor.changeColor);
+
+        // Note: It display undefined.
+        // Why ?
+    </script>
+
+</body>
+
+</html>
