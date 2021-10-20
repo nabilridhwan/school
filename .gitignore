@@ -1,2 +1,6 @@
 *node_modules*
 .DS_Store
+/JPRG/Practical1/nbproject/private/
+/JPRG/Practical1/build/
+/JPRG/Practical2/nbproject/private/
+/JPRG/Practical2/build/
