@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <h1>My Simple Calculator</h1>
+
+    <label for="number1">Number 1:</label>
+    <input type="text" id="number1">
+
+    <label for="number2">Number 2:</label>
+    <input type="text" id="number2">
+
+    <button id="additionButton">Addition</button>
+    <button id="subtractionButton">Subtraction</button>
+    <button id="multiplicationButton">Multiplication</button>
+    <button id="divisionButton">Division</button>
+
+    <script>
+        let number1 = document.getElementById('number1');
+        let number2 = document.getElementById('number2');
+
+        let additionButton = document.getElementById('additionButton');
+        let subtractionButton = document.getElementById('subtractionButton');
+        let multiplicationButton = document.getElementById('multiplicationButton');
+        let divisionButton = document.getElementById('divisionButton');
+
+        let alertValue;
+
+        additionButton.addEventListener("click", () => {
+            alert(parseInt(number1.value) + parseInt(number2.value));
+        })
+
+
+        subtractionButton.addEventListener("click", () => {
+            alert(parseInt(number1.value) - parseInt(number2.value));
+        })
+
+        multiplicationButton.addEventListener("click", () => {
+            alert(parseInt(number1.value) * parseInt(number2.value));
+        })
+
+        divisionButton.addEventListener("click", () => {
+            alert(parseInt(number1.value) / parseInt(number2.value));
+        })
+        
+    </script>
+</body>
+</html>

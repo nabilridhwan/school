@@ -23,6 +23,7 @@
             constructor(diplomaName){
                 this.diploma = diplomaName;
             }
+
         }
         
         class Module extends Diploma{
@@ -30,7 +31,7 @@
                 super(diplomaName)
             }
 
-            getModuleName = () => {
+            getModuleName(){
                 if(this.diploma == "SpDip in WebDevelopment "){
                     return "MAD";
                 }else if(this.diploma == "SpDip in AI"){
