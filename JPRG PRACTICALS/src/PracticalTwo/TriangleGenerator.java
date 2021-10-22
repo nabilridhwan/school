@@ -21,25 +21,25 @@ public class TriangleGenerator {
 //      TODO: Think of invalid characters and replace them with asterisk
         for(int i = 0; i < trianglePeak+1; i++){
 
-            String tempStringTwo = "";
+            StringBuilder topTriangle = new StringBuilder();
 
             for(int k = 0; k < i; k++){
-                tempStringTwo += character;
+                topTriangle.append(character);
             }
 
-            System.out.println(tempStringTwo);
+            System.out.println(topTriangle);
 
         }
 
 //        For the bottom half of the triangle
         for(int j = trianglePeak-1; j > 0; j--){
 
-            String tempStringTwo = "";
+            StringBuilder bottomTriangle = new StringBuilder();
 
             for(int k = 0; k < j; k++){
-                tempStringTwo += character;
+                bottomTriangle.append(character);
             }
-            System.out.println(tempStringTwo);
+            System.out.println(bottomTriangle);
         }
 
     }

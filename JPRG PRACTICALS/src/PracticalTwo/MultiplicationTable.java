@@ -6,7 +6,7 @@ public class MultiplicationTable {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String outputString = "";
+        StringBuilder outputString = new StringBuilder();
 
         System.out.print("Enter the beginning value : ");
         int startValue = input.nextInt();
@@ -14,14 +14,14 @@ public class MultiplicationTable {
         System.out.print("Enter the ending value : ");
         int endValue = input.nextInt();
 
-        for(int i = 1; i < 26; i++){
-            outputString += (i + "\t");
+        for(int i = 0; i < 25; i++){
+//            outputString.append(i + 1).append("\t");
             for(int j = startValue; j < endValue+1; j++){
-                outputString += ((i*j) + "\t");
+                outputString.append((i + 1) * j).append("\t");
             }
-            outputString += "\n";
+            outputString.append("\n");
         }
 
-        System.out.println(outputString);
+        System.out.println(outputString.toString());
     }
 }
