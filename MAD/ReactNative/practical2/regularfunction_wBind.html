@@ -30,6 +30,7 @@
         mycolor = new MyColor("Red");
         mycolor.changeColor;
 
+        // ! BIND binds the this keyword in the context of mycolor's this keyword
         //The window object calls the function:
         window.addEventListener("load", mycolor.changeColor.bind(mycolor));
 

@@ -5,7 +5,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json()); 
 
 app.delete("/user/:id", (req, res) => {
-
     let {
         id
     } = req.params;
@@ -16,7 +15,6 @@ app.delete("/user/:id", (req, res) => {
 })
 
 app.put("/user/:id", (req, res) => {
-
     let {
         id
     } = req.params;
