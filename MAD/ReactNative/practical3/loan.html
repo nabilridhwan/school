@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h4>Enter Loan Information</h4>
+
+    <label for="amtLoan">1) Amount of the loan (Principal):</label>
+    <input type="text" name="amtLoan" id="amtLoan">
+
+    <br>
+
+    <label for="annualPercentage">2) Annual percentage rate of interest (in percentage):</label>
+    <input type="text" name="annualPercentage" id="annualPercentage">
+
+    <br>
+
+    <label for="years">3) Repayment period in years:</label>
+    <input type="text" name="years" id="years">
+
+    <br>
+
+    <button id="computeButton">Compute</button>
+
+    <h4>Enter Loan Information</h4>
+
+    <label for="monthlyRepayment">4) Monthly repayment will be:</label>
+    <input type="text" name="monthlyRepayment" id="monthlyRepayment" disabled>
+
+    <br>
+
+    <label for="totalPayment">5) Total payment wil be:</label>
+    <input type="text" name="totalPayment" id="totalPayment" disabled>
+
+    <br>
+
+    <label for="totalInterestPayment">6) Total interest payments will be:</label>
+    <input type="text" name="totalInterestPayment" id="totalInterestPayment" disabled>
+
+
+    <script>
+        class Loan {
+            constructor(principal, interest, payment) {
+                this.principal = principal;
+                this.interest = interest;
+                this.payment = payment
+            }
+        }
+
+        class Repayment extends Loan {
+            constructor(principal, interest, payment) {
+                // Principal = principal
+                // Interest = percentage
+                // Payment = period
+                super(principal, interest, payment);
+
+            }
+
+            calculateMonthlyRepayment() {
+                let P = this.principal;
+
+                // Monthly interest
+                let i = this.interest / 100 / 12;
+
+                // Years to months
+                let t = this.payment * 12;
+
+                return ((P * (1 + i) ** t) * i) / ((1 + i) ** t - 1)
+            }
+
+            getTotalPayment() {
+                return this.calculateMonthlyRepayment() * this.payment * 12
+            }
+
+            totalInterestPayment() {
+                return this.getTotalPayment() - this.principal
+            }
+        }
+
+        let amtLoan = document.getElementById("amtLoan")
+        let annualPercentage = document.getElementById("annualPercentage")
+        let years = document.getElementById("years")
+        let computeButton = document.getElementById("computeButton")
+        let monthlyRepayment = document.getElementById("monthlyRepayment")
+        let totalPayment = document.getElementById("totalPayment")
+        let totalInterestPayment = document.getElementById("totalInterestPayment")
+
+        computeButton.addEventListener("click", () => {
+
+            let p = new Repayment(amtLoan.value, annualPercentage.value, years.value);
+
+            monthlyRepayment.value = p.calculateMonthlyRepayment();
+            totalPayment.value = p.getTotalPayment();
+            totalInterestPayment.value = p.totalInterestPayment();
+        })
+    </script>
+
+</body>
+
+</html>
