@@ -18,16 +18,13 @@ public class FinalScoreCalculator {
         System.out.print("Enter General Performance Scores : ");
         int general_performance_score = input.nextInt();
 
-        double weightage_mst = 0.2;
-        double weightage_assignment_one = 0.25;
-        double weightage_assignment_two = 0.35;
-        double weightage_general_performance = 0.20;
+        final double weightage_mst = 0.2;
+        final double weightage_assignment_one = 0.25;
+        final double weightage_assignment_two = 0.35;
+        final double weightage_general_performance = 0.20;
 
         double final_score = (mst_score * weightage_mst) + (assignment_one_score * weightage_assignment_one) + (assignment_two_score * weightage_assignment_two) + (general_performance_score * weightage_general_performance);
 
-
-        String displayScore = Double.toString(final_score) + "0";
-
-        System.out.println("Your final scores: " + displayScore);
+        System.out.printf("Your final scores: %.2f%n", final_score);
     }
 }
