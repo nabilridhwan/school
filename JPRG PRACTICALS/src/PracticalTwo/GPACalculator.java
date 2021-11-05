@@ -6,10 +6,10 @@ public class GPACalculator {
     public static void main(String[] args) {
         int moduleNumber = 0;
         String gradeInput = "";
-        int creditInput = 0;
 
+        int creditInput = 0;
         int totalCredits = 0;
-        int totalGrade = 0;
+        int numerator = 0;
         Scanner input = new Scanner(System.in);
 
         do{
@@ -19,31 +19,30 @@ public class GPACalculator {
             if(!gradeInput.equals("0")){
                 System.out.print("\nEnter credit units for module #" + (moduleNumber+1) + " : ");
                 creditInput = input.nextInt();
+                totalCredits += creditInput;
             }
 
 //            Fix GPA Calculation
             switch (gradeInput){
                 case "A":
-                    totalGrade += 4;
+                    numerator += (4 * creditInput);
                     break;
                 case "B":
-                    totalGrade += 3;
+                    numerator += (3 * creditInput);
                     break;
                 case "C":
-                    totalGrade += 2;
+                    numerator += (2 * creditInput);
                     break;
                 case "D":
-                    totalGrade += 1;
+//                    numerator = (D) * creditInput == 1*creditInput == creditInput
+                    numerator += creditInput;
                     break;
             }
 
-            totalCredits += creditInput;
             moduleNumber++;
         }while (!gradeInput.equals("0"));
 
-        System.out.println("totalGrade = " + totalGrade);
-        System.out.println("totalCredits = " + totalCredits);
-
-        System.out.println("Your GPA is " + (double) ((double) totalGrade / (double) totalCredits));
+        double gpa = (double) numerator / (double) totalCredits;
+        System.out.println(String.format("Your GPA is %.2f", gpa));
     }
 }

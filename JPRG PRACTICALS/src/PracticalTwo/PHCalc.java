@@ -19,7 +19,10 @@ public class PHCalc {
 //                    Acidic
                     JOptionPane.showMessageDialog(null, "Your aquarium water is acidic");
 
-                }else{
+                }else if(phLevel == 7){
+                    JOptionPane.showMessageDialog(null, "Your aquarium water is neutral");
+                }
+                else{
 //                    Alkaline
                     JOptionPane.showMessageDialog(null, "Your aquarium water is alkaline");
                 }
