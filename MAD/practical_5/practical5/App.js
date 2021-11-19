@@ -14,7 +14,7 @@ import {
 
 // Task 2
 export default class App extends React.Component{
-  constructor(props){
+   constructor(props){
     super(props);
     this.state = {
       counter: 0
