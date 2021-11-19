@@ -2,14 +2,11 @@ import java.util.Scanner;
 
 public class Scrapbook {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Circle c1 = new Circle(2.0);
 
-        System.out.print("Enter a string without space: ");
-        String inputString = input.next();
+        System.out.println(c1.getRadius());
 
-//        If you enter with a space, then it will only capture the first word before the first space.
-//        this is awesome -> this
-//        test 1 2 3 -> test
-        System.out.println("You have entered: " + inputString);
+//        Does not work! because radius is private
+//        System.out.println(c1.radius);
     }
 }
