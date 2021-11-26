@@ -1,4 +1,5 @@
 *node_modules*
+*debug.log*
 .DS_Store
 /JPRG/Practical1/nbproject/private/
 /JPRG/Practical1/build/

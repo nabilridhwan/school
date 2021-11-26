@@ -1,74 +1,47 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, Alert, TextInput, Button, TouchableOpacity } from 'react-native';
-
-// Practical 6 Task 2 Page 1
+import React from 'react';
+import { View, Text, SectionList, StyleSheet, Alert, TouchableOpacity } from 'react-native';
+// Practical 7 Task 1 and 2
 export default function App() {
+  const DATA = [
+    {title: "C", data: ["Chan CC", "Clement Lee", "Candy Lim"]},
+    {title: "B", data: ["Ben Tan", "Bee Hui"]},
+    {title: "D", data: ["Danny Lee", "Donna Chen"]},
+    {title: "E", data: ["Ethan", "Erica Pan"]},
+    {title: "M", data: ["Melody", "Mandy Poon"]},
+    {title: "S", data: ["Sonna Tay", "Sunny Pang", "Sherman Ang"]},
+  ];
+
+  const handleOnPress = (item) => {
+    Alert.alert("Alert", item);
+  }
+
+  const renderItem = ({item}) => {
+    return (
+      <TouchableOpacity style={styles.listItemStyles} onPress={() => {handleOnPress(item)}}>
+        <Text>{item}</Text>
+      </TouchableOpacity>
+    )
+  }
+
+  const renderSectionHeader = ({section}) => {
+    return <Text style={styles.title} >{section.title}</Text>
+  }
+
+
   return (
-    <View style={styles.container}>
-      <View style={styles.formContainer}>
-        <Text style={styles.title}>My Mobile App</Text>
-
-        <TextInput style={styles.textInputStyle} placeholderTextColor="white" placeholder="Email" />
-        <TextInput style={styles.textInputStyle} placeholderTextColor="white" placeholder="Password" />
-
-        <Text style={styles.forgetPassword}>Forget Password?</Text>
-
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>LOGIN</Text>
-        </TouchableOpacity>
-
-        <Text style={styles.signUp}>SIGN UP</Text>
-      </View>
-    </View>
+    <SectionList sections={DATA} renderItem={renderItem} renderSectionHeader={renderSectionHeader} keyExtractor={(item, index) => index}/>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#faeee0",
-    justifyContent: "center",
-  },
-
-  formContainer: {
-    margin: 30,
-  },
-
-
-
   title: {
-    fontSize: 36,
-    fontWeight: "bold",
-    textAlign: "center",
-    color: "#ff00ff",
+    backgroundColor: "darkblue",
+    color: "white",
+    fontSize: 20,
+    padding: 5,
   },
-
-  forgetPassword: {
-    textAlign: "center",
-    color: "red",
-    marginBottom: 50,
-  },
-
-  textInputStyle: {
-    backgroundColor: "#f9cf93",
-    paddingLeft: 20,
-    marginTop: 10,
-    marginBottom: 10,
-    borderRadius: 50,
-  },
-
-  button: {
-    borderRadius: 100,
-    backgroundColor: "#dbd0c0",
-    padding: 10,
-  },
-
-  buttonText: {
-    textAlign: "center",
-  },
-
-  signUp: {
-    textAlign: "center",
-    marginTop: 10,
-  },
-})
+  listItemStyles: {
+    paddingTop: 5,
+    paddingBottom: 5,
+  }
+});
