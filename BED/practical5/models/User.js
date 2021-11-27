@@ -208,7 +208,7 @@ const User = {
             if (err) {  
                 return callback(err, null);
             } else {
-                const sql = "SELECT u1.username, u2.username FROM friendship f, user u1, user u2 WHERE f.fk_friend_one_id = u1.id and f.fk_friend_two_id = u2.id and f.fk_friend_one_id = ?;";
+                const sql = "SELECT u2.username, u2.bio FROM friendship f, user u1, user u2 WHERE f.fk_friend_one_id = u1.id and f.fk_friend_two_id = u2.id and f.fk_friend_one_id = ?;";
                 // Add it in such a way that it is user one followed by user two
                 dbConn.query(sql, [userID], (err, results) => {
                     dbConn.end();
