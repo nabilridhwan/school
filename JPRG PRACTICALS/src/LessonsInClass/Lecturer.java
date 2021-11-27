@@ -19,4 +19,8 @@ public class Lecturer extends Person{
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public void greetings(){
+        System.out.println("I am a lecturer, and my name is " + getName() + " and I am " + getAge() + " years old. I earn $" + getSalary());
+    }
 }
