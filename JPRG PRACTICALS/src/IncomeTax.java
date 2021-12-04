@@ -3,7 +3,6 @@ public class IncomeTax extends Tax{
     private int personalReliefs;
 
     public IncomeTax(String name, String nric, double inAnnualIncome, int inPersonalReliefs){
-        super(name, nric);
         annualIncome = inAnnualIncome;
         personalReliefs = inPersonalReliefs;
     }
