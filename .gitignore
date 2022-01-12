@@ -6,3 +6,5 @@
 /JPRG/Practical2/nbproject/private/
 /JPRG/Practical2/build/
 *.class
+*env*
+*android/app/build/*

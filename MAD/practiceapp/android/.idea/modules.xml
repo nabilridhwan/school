@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/practiceapp.iml" filepath="$PROJECT_DIR$/.idea/modules/practiceapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/practiceapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/practiceapp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-411523198/practiceapp.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-411523198/practiceapp.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1194830741/practiceapp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/1194830741/practiceapp.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2127442622/practiceapp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/2127442622/practiceapp.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/564676694/practiceapp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/564676694/practiceapp.react-native-screens.iml" />
     </modules>
   </component>
 </project>

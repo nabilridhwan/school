@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nabri\\Documents\\school\\MAD\\practiceapp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gu\\values-gu.xml",
+            "outputFile": "C:\\Users\\nabri\\Documents\\Programming\\school\\MAD\\practiceapp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gu\\values-gu.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\nabri\\.gradle\\caches\\transforms-3\\5646db46e2cfb43e7b3d42f3054c498c\\transformed\\core-1.5.0\\res\\values-gu\\values-gu.xml",
+                    "source": "C:\\Users\\nabri\\.gradle\\caches\\transforms-3\\5efa136d6b7a2c594211658eacead3c1\\transformed\\core-1.6.0\\res\\values-gu\\values-gu.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

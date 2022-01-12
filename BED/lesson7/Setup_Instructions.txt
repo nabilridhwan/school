@@ -1,0 +1,16 @@
+Instructions
+1. Import Database Data from the `DB_DUMP` folder under the schema name `sp_it`.
+
+2. Run `npm install` on the root directory of this project to install the dependencies of the project.
+
+3. Create a `.env` with the following properties (for the sake of presentation and testing, these environment variables are already provided).
+
+HOST=<Your Host>
+PORT=<Your Port>
+CLOUDINARY_API_KEY=<Your Cloudinary API Key>
+CLOUDINARY_API_SECRET=<Your Cloudinary Secret Key>
+CLOUDINARY_CLOUD_NAME=<Your Cloudinary Cloud Name>
+
+4. Run `node index.js` on the root folder of this project.
+
+5. Voila! Your app is running!
