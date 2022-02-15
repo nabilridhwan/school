@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/profile.css" rel="stylesheet" />
+        <Title>User Profile</Title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+    </head>
+    <body>
+            <div class="card">
+                    <img src="http://localhost:3001/profile.jpg" id="profilepic" alt="Profile" style="width:100%">
+                    <p class="username"> <label>Username: </label>
+                        <input type="text" id="username"> </br></p>
+                    <p class="role"><label>Job role: </label>
+                        <input type="text" id="role"> </br></p>
+                    <p class="email"><label>Email: </label>
+                        <input type="text" id="email"> </p>
+                    <p><span id="msg"></span></p>
+                    <a href="#"><i class="fa fa-dribbble"></i></a> 
+                    <a href="#"><i class="fa fa-twitter"></i></a> 
+                    <a href="#"><i class="fa fa-linkedin"></i></a> 
+                    <a href="#"><i class="fa fa-facebook"></i></a> 
+                    <p><input type="button" id="Update" value="Update Profile" /></p>
+                    <p><input type="button" id="Logout" value="Log Out" /></p>
+                  </div>
+
+
+                  <script>
+                      let UserData = localStorage.getItem("UserData");
+                      if(!UserData) window.location.href = "http://localhost:3001/login.html";
+                        let UserDataObj = JSON.parse(UserData)[0];
+
+                        const {email, role, userid, username, pic} = UserDataObj;
+                        $("#username").val(username);
+                        $("#role").val(role);
+                        $("#email").val(email);
+
+                        if(pic){
+                            $("#profilepic").attr("src", pic)
+                        }
+
+                        $("#Logout").click(() => {
+                            localStorage.removeItem("UserData");
+                            localStorage.removeItem("token");
+                            window.location.href = "http://localhost:3001/login.html";
+                        })
+
+                        $("#Update").click(() => {
+                            let username = $("#username").val();
+                            let role = $("#role").val();
+                            let email = $("#email").val();
+                            let pic = $("#profilepic").attr("src");
+                            let data = {
+                                username,
+                                role,
+                                email,
+                            }
+
+                            const token = localStorage.getItem("token");
+
+                            $.ajax({
+                                url: "http://localhost:8080/user/update",
+                                type: "POST",
+                                data: data,
+                                headers: {
+                                    'authorization': `Bearer ${token}`
+                                },
+                                success: (res) => {
+                                    if(res.status === "success"){
+                                        $("#msg").text("Profile Updated Successfully");
+                                    }
+                                },
+                            })
+                        })
+                  </script>
+    </body>
+</html>

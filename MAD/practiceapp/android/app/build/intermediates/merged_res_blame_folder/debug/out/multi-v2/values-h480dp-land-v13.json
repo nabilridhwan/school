@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\nabri\\Documents\\Programming\\school\\MAD\\practiceapp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "C:\\Users\\nabri\\Documents\\school\\MAD\\practiceapp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\nabri\\.gradle\\caches\\transforms-3\\94ecee73d302f93903038c0fd7a3667d\\transformed\\material-1.1.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",

@@ -3,7 +3,7 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './Practical11StackNavigator/App';
+import App from './Lesson_AsyncStorage/App';
 import {name as appName} from './app.json';
 
 AppRegistry.registerComponent(appName, () => App);

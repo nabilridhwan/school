@@ -133,7 +133,9 @@
     <orderEntry type="library" name="Gradle: androidx.autofill:autofill:1.1.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.facebook.fresco:imagepipeline-okhttp3:2.5.0@aar" level="project" />
     <orderEntry type="module" module-name="practiceapp.react-native-screens" />
+    <orderEntry type="module" module-name="practiceapp.react-native-async-storage_async-storage" />
     <orderEntry type="module" module-name="practiceapp.react-native-community_masked-view" />
+    <orderEntry type="module" module-name="practiceapp.react-native-masked-view_masked-view" />
     <orderEntry type="module" module-name="practiceapp.react-native-gesture-handler" />
     <orderEntry type="module" module-name="practiceapp.react-native-safe-area-context" />
   </component>

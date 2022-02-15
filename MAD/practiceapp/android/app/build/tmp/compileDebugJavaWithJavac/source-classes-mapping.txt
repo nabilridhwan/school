@@ -1,8 +1,7 @@
 com/practiceapp/MainActivity.java
  com.practiceapp.MainActivity
-com/practiceapp/MainApplication.java
- com.practiceapp.MainApplication
- com.practiceapp.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
 com/practiceapp/ReactNativeFlipper.java
  com.practiceapp.ReactNativeFlipper
  com.practiceapp.ReactNativeFlipper$1
@@ -10,5 +9,6 @@ com/practiceapp/ReactNativeFlipper.java
  com.practiceapp.ReactNativeFlipper$2$1
 com/practiceapp/BuildConfig.java
  com.practiceapp.BuildConfig
-com/facebook/react/PackageList.java
- com.facebook.react.PackageList
+com/practiceapp/MainApplication.java
+ com.practiceapp.MainApplication
+ com.practiceapp.MainApplication$1

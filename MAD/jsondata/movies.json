@@ -1,0 +1,31 @@
+{
+    "title": "Movie Collection",
+    "description": "My Favourite Movie Collection",
+
+    "movies": [{
+            "id": "1",
+            "title": "Spider-Man",
+            "releaseYear": "2018"
+        },
+        {
+            "id": "2",
+            "title": "Back to the Future",
+            "releaseYear": "1985"
+        },
+        {
+            "id": "3",
+            "title": "Toy Story 3",
+            "releaseYear": "2010"
+        },
+        {
+            "id": "4",
+            "title": "Star Wars - The Force Awakens",
+            "releaseYear": "2015"
+        },
+        {
+            "id": "5",
+            "title": "Interstellar",
+            "releaseYear": "2014"
+        }
+    ]
+}
