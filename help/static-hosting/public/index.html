@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+
+        <style>
+            .selected {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="question"></h1>
+        <div id="buttons"></div>
+
+        <script>
+            let selectedButton;
+            fetch("/api/v1/quiz")
+                .then((res) => res.json())
+                .then((d) => {
+                    const [firstQuiz] = d.data;
+                    const [firstQuestion] = firstQuiz.questions;
+                    const { question, answers } = firstQuestion;
+
+                    document.getElementById("question").innerHTML = question;
+
+                    let buttons = answers.map((answer) => {
+                        // 1. Create a button
+                        let button = `
+                                    <button class="btn" onclick="selectButton">
+                                        ${answer}
+                                        </button>
+                                    `;
+
+                        document.getElementById("buttons").innerHTML += button;
+                    });
+                });
+
+            function selectButton(c) {
+                // button.addEventListener("click", () => {
+                //                             console.log(`${answer} was clicked`);
+                //                             if (!selectedButton) {
+                //                                 selectedButton = button;
+                //                                 selectedButton.classList.add("selected");
+                //                             } else {
+                //                                 selectedButton.classList.remove("selected");
+                //                                 selectedButton = button;
+                //                                 selectedButton.classList.add("selected");
+                //                             }
+                //                             fetch("/api/v1/quiz/verify", {
+                //                                 method: "POST",
+                //                                 headers: {
+                //                                     "Content-Type": "application/json",
+                //                                 },
+                //                                 body: JSON.stringify({
+                //                                     answer,
+                //                                     questionNumber: 1,
+                //                                 }),
+                //                             })
+                //                                 .then((res) => res.json())
+                //                                 .then((d) => {
+                //                                     console.log(d);
+                //                                 });
+                // });
+            }
+        </script>
+    </body>
+</html>

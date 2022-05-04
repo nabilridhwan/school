@@ -28,4 +28,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/webapp/prac2/part3-4/login.jsp</name>
+			<type>1</type>
+			<location>C:/Users/nabri/Documents/Programming/school/JAD/Practicals/src/main/webapp/prac2/part1-2/login.jsp</location>
+		</link>
+	</linkedResources>
 </projectDescription>
