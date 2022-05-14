@@ -21,12 +21,12 @@
 
 	<form action="./displayMTable.jsp">
 		<label for="number">Enter number:</label>
-		<input type="number" name="number">
+		<input type="text" name="number">
 		
 		<br>
 		
 		<label for="number">Number of rows to display</label>
-		<input type="number" name="rows">
+		<input type="text" name="rows">
 		
 		<button>Submit</button>
 	</form>

@@ -13,7 +13,6 @@
 	}
 	
 	td{
-		text-align: center;
 		border: 1px solid black;
 	}
 </style>

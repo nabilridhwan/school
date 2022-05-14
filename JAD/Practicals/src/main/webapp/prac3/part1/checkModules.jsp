@@ -21,7 +21,7 @@
 	%>
 	
 	<% if(modules == null){%>
-		<p>You have no modules this semester</p>
+		<p>You have no modules this semester.</p>
 	<%}else{%>
 		<p>You are taking:</p>
 		
