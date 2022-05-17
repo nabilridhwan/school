@@ -29,8 +29,8 @@
         PreparedStatement ps = conn.prepareStatement("INSERT INTO member(name, password) VALUES(?,?)");      
      	ps.setString(1, "name");
      	ps.setString(2, "password");
-     	`
-        int affectedRows = ps.executeUpdate()();
+     	
+        int affectedRows = ps.executeUpdate();
 
         // Do whateveer you want to do with the int
 	      
