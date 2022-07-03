@@ -15,6 +15,14 @@
 			<p>The value you entered are not numbers</p>
 		</div>
 	<%}%>
+	
+	<%if(request.getParameter("error") != null && request.getParameter("error").equals("empty")){%>
+		<div class="error">
+			<p>Please enter valid values</p>
+		</div>
+	<%}%>
+	
+	
 
 	<form action="add2Cart.jsp" method="POST">
 		<label for="isbn">ISBN</label>

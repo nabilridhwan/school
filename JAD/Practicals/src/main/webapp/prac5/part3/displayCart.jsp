@@ -13,9 +13,11 @@
 <body>
 
 	<%
+		String test = "testing";
 		// Get books
 		ArrayList<Book> books = new ArrayList<Book>();
 		if(session.getAttribute("book") != null){
+			
 			books = (ArrayList<Book>) session.getAttribute("book");
 		}
 	%>
