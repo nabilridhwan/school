@@ -73,12 +73,13 @@ public class VerifyUserServlet extends HttpServlet {
 	        	
 	        	// Redirect
 	        	response.sendRedirect("/Practicals/prac5/part4/displayMember.jsp");
-				return;
+				
 	        }else{
+	        	
 
 				// If there is no user found, redirect them to the login page with an error
 	        	response.sendRedirect("/Practicals/prac5/part4/login.jsp?errCode=invalidLogin");
-				return;
+				
 	        }
 	        
 	        conn.close();
