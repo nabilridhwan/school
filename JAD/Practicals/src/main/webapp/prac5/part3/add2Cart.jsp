@@ -27,6 +27,11 @@
 	int quantityInt = 0;
 	int priceInt = 0;
 	
+	if(isbn.isEmpty() || title.isEmpty() || author.isEmpty() || publisher.isEmpty()){
+		response.sendRedirect("buybook.jsp?error=empty");
+		return;
+	}
+	
 	try{
 		quantityInt = Integer.parseInt(quantity);
 		priceInt = Integer.parseInt(price);
