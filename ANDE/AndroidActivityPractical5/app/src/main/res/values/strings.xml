@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidActivity-Practical5</string>
+    <string name="about_text">About the application</string>
+    <string name="about_title">About the application page</string>
+</resources>
