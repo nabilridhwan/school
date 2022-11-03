@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_UserInfo">
+
+    <TextView
+        android:id="@+id/txtUserDetail"
+        android:layout_width="228dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="32dp"
+        android:text="User Detail"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStudentName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.302"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Student Name"
+        app:layout_constraintBottom_toTopOf="@+id/editTextStudentID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextStudentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Student ID"
+        app:layout_constraintBottom_toTopOf="@+id/chkBoxFullTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkBoxFullTime"
+        android:layout_width="134dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Full Time Student"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintBottom_toTopOf="@+id/rdGpBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdGpBox"
+        android:layout_width="151dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbtnMale"
+            android:layout_width="134dp"
+            android:layout_height="53dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbtnFemale"
+            android:layout_width="133dp"
+            android:layout_height="44dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <DatePicker
+        android:id="@+id/dPickDOB"
+        android:layout_width="349dp"
+        android:layout_height="164dp"
+        android:layout_marginBottom="28dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDOB"
+        android:layout_width="128dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:text="Date of Birth"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/dPickDOB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextPage"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick"
+        android:text="Start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
