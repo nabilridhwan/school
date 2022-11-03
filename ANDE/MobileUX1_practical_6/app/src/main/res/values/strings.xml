@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobileUX1_practical_6</string>
+    <string name="to">To</string>
+    <string name="msg">Message</string>
+    <string name="sendButton">Send Message</string>
+    <string name="SendMsg_title">Confirmed Send</string>
+</resources>
