@@ -4,6 +4,12 @@ Diploma In Information Technology - Singapore Polytechnic)
 
 All codes relating to my stay in Singapore Polytechnic.
 
+## Hello!
+
+It seems that you're here either because you were exploring my profile or I gave you the link for your reference.
+
+Before you go and hurry your way into reading codes, you'd find it worth it to read the entirety of this document.
+
 ## How can I view these codes?
 
 You can open the in-browser GitHub VS Code-esque editor by replacing the `.com` in `github.com` in the URL bar with `.dev` making it `github.dev` OR by pressing on the `.` key on your keyboard.
