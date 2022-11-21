@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">lecture-5</string>
+
+    <string-array name="prog_lang">
+        <item>Python</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>C++</item>
+        <item>C#</item>
+        <item>.Net</item>
+    </string-array>
+
+</resources>

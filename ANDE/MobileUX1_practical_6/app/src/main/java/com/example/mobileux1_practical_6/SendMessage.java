@@ -1,5 +1,6 @@
 package com.example.mobileux1_practical_6;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,9 +13,9 @@ public class SendMessage extends AppCompatActivity {
     private String dTo, dMsg;
     TextView rtxtTo,rtxtMsg;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 

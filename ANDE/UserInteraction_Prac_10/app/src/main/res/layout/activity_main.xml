@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
+        android:text="User Interaction"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSharedPref"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnSharedPref"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onClick"
+        android:text="Shared Preference"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBoardcastR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBoardcastR"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onClick"
+        android:text="Broadcast Receiver"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNotify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNotify"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="onClick"
+        android:text="Notification"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSMSReceived"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="onClick"
+        android:text="SMS - Broadcast Received"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
