@@ -10,11 +10,14 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.provider.Telephony;
 import android.telephony.SmsMessage;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SMSReceived extends AppCompatActivity {
 
     private static final int NOTIFY_ME_ID = 1337;
+
+    TextView smsTv;
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
@@ -23,6 +26,8 @@ public class SMSReceived extends AppCompatActivity {
             String message = messages[0].getDisplayMessageBody();
             // TODO Auto-generated method stub
 //            String msg = intent.getStringExtra("msg");
+
+            smsTv.setText(message);
             Toast.makeText(context, "Received Message: " + message, Toast.LENGTH_SHORT).show();
         }
     };
@@ -34,6 +39,7 @@ public class SMSReceived extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sms);
+        smsTv = (TextView) findViewById(R.id.textViewSMS);
     }
 
     @Override

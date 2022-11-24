@@ -7,7 +7,7 @@
     tools:context=".SMSReceived">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewSMS"
         android:layout_width="355dp"
         android:layout_height="69dp"
         android:text="SMS Message"
