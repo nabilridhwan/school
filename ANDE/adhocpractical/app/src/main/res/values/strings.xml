@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">adhocpractical</string>
+    <string name="MainActivityAppbar">Email Contact Information</string>
+    <string name="ListContactAppbar">All Email Information</string>
+    <string name="AddContactAppbar">Add Email</string>
+
+</resources>

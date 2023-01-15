@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560872340238",
+    "firebase_url": "https://fbdatastore-ande-practical-12-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fbdatastore-ande-practical-12",
+    "storage_bucket": "fbdatastore-ande-practical-12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560872340238:android:1d93bec1907df2b84d355f",
+        "android_client_info": {
+          "package_name": "com.example.fbdatastore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560872340238-3uqqb5vf1h9ou7lcvqq5s6kis71792mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgBhlmzsJGLQq_wumFondemducZSp1xKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560872340238-3uqqb5vf1h9ou7lcvqq5s6kis71792mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
